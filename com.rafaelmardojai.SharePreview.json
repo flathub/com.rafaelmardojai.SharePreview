@@ -1,7 +1,7 @@
 {
     "app-id": "com.rafaelmardojai.SharePreview",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "share-preview",
@@ -34,55 +34,6 @@
         "/bin/sassc"
     ],
     "modules": [
-    	{
-            "name": "libsass",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                    "type" : "archive",
-                    "url" : "https://github.com/sass/libsass/archive/3.6.4.tar.gz",
-                    "sha256": "f9484d9a6df60576e791566eab2f757a97fd414fce01dd41fc0a693ea5db2889"
-                },
-                {
-                    "type" : "script",
-                    "dest-filename" : "autogen.sh",
-                    "commands" : [ "autoreconf -si" ]
-                }
-            ]
-        },
-        {
-            "name": "sassc",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                    "type" : "archive",
-                    "url" : "https://github.com/sass/sassc/archive/3.6.1.tar.gz",
-                    "sha256": "8cee391c49a102b4464f86fc40c4ceac3a2ada52a89c4c933d8348e3e4542a60"
-                },
-                {
-                    "type" : "script",
-                    "dest-filename" : "autogen.sh",
-                    "commands" : [ "autoreconf -si" ]
-                }
-            ]
-        },
-        {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "config-opts" : [
-                "-Dvapi=false",
-                "-Dexamples=false",
-                "-Dtests=false"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    /* "branch" : "main", */
-                    "commit" : "3435bad9c6c7c84d75e11c80acb9f3123e0f280e"
-                }
-            ]
-        },
         {
             "name": "share-preview",
             "buildsystem": "meson",
@@ -90,8 +41,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/rafaelmardojai/share-preview/releases/download/0.1.2/share-preview-0.1.2.tar.xz",
-                    "sha256" : "d281fa0c8d81a1bab39988d94b075a813dcef4eb31581e457907c4535108b8df"
+                    "url" : "https://github.com/rafaelmardojai/share-preview/releases/download/0.2.0/share-preview-0.2.0.tar.xz",
+                    "sha256" : "8eb36fd76f32f76a514d450961d30e0ec630899d2f8ed6134241666a0ed7b9b2"
                 }
             ]
         }
