@@ -1,7 +1,7 @@
 {
     "app-id": "com.rafaelmardojai.SharePreview",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "share-preview",
@@ -41,8 +41,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/rafaelmardojai/share-preview/releases/download/0.4.0/share-preview-0.4.0.tar.xz",
-                    "sha256" : "73eefa34147ee44fe390b748486b098f13f9dc5638847c6ac6524a4672e30bd1"
+                    "url" : "https://github.com/rafaelmardojai/share-preview/releases/download/0.5.0/share-preview-0.5.0.tar.xz",
+                    "sha256" : "8efe6e07f853fb0d029fa38fc8898c7a21bbcc023dfb2d91fd0359ba74d479b4"
                 }
             ]
         }
