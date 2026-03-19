@@ -1,7 +1,7 @@
 {
     "app-id": "com.rafaelmardojai.SharePreview",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "share-preview",
@@ -19,20 +19,6 @@
             "RUST_BACKTRACE": "1"
         }
     },
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a",
-        "/lib/girepository-1.0",
-        "/share/gir-1.0",
-        "/bin/sassc"
-    ],
     "modules": [
         {
             "name": "share-preview",
